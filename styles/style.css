@@ -1,1 +1,354 @@
-/* место для вашего кода */
+/* ШАПКА */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 148px 1fr;
+    max-height: 293px;
+    height: 100%;
+    padding: 92px 86px 96px 51px;
+}
+
+.header__menu {
+    align-self: center;
+}
+
+.menu__list {
+    text-transform: lowercase;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.13px;
+    text-underline-offset: 4px;
+}
+
+.header__links-list {
+    display: flex;
+    gap: 31px;
+
+    list-style-type: circle;
+    letter-spacing: 0.01em;
+}
+
+.header__links-list-item_no-bullet {
+    list-style-type: none;
+}
+
+.link-active {
+    text-decoration: none;
+}
+
+.header__logo {
+    margin: 0 24px;
+    width: 100%;
+}
+
+.header__logo-image {
+    width: 136px;
+}
+
+.address {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px;
+    text-underline-offset: 4px;
+    letter-spacing: 0;
+}
+
+.header__address {
+    place-self: center end;
+}
+
+.address-contacts {
+    letter-spacing: 0.01em;
+}
+
+/* ЗАГОЛОВОК */
+
+.cover {
+    min-height: 757px;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+
+    display: grid;
+    grid-template-columns: 1fr 306px;
+    grid-auto-rows: 1fr 102.5px;
+
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+    background-color: black;
+    opacity: 0.6;
+}
+
+
+.cover__title {
+    grid-column-start: span 2;
+    position: relative;
+    z-index: 1;
+    padding-top: 165px;
+    padding-left: 50px;
+
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    line-height: 115px;
+}
+
+.letter-spasing_60 {
+    letter-spacing: 0.6em;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text-center {
+    text-align: center;
+    line-height: 100px;
+    padding: 19px 50px 0 0;
+}
+
+.aligned-text-end {
+    text-align: end;
+    line-height: 100px;
+    padding: 20px 20px 0 0;
+}
+
+.cover__description-text {
+    position: relative;
+    z-index: 1;
+    padding-top: 13px;
+    padding-left: 78px;
+
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 28px;
+    word-spacing: 0.8em;
+}
+
+.word-spasing_90 {
+    word-spacing: 0.9em;
+}
+
+.word-spasing_110 {
+    word-spacing: 1.1em;
+}
+
+.bet-button {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-family: Raleway, sans-serif;
+    width: 256px;
+    height: 51px;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: rgb(0 0 0 /0);
+    border-color: white;
+}
+
+/* ЛОТЫ */
+
+.lots {
+    min-height: 692px;
+    height: 100%;
+    padding: 180px 24px;
+}
+
+.lots__heading {
+    padding-left: 40px;
+    color: black;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.lots__card {
+    margin-bottom: 30px;
+} 
+
+.lots__card-list {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+
+.card {
+    position: relative;
+    min-height: 563px;
+    height: 100%;
+    max-width: 334px;
+    width: 100%;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card_content {
+    color: white;
+    font-family: Raleway, sans-serif;
+    display: flex;
+    padding: 51px 40px 48px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__title {
+    z-index: 1;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.card__text {
+    z-index: 1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.lots__look-more-link {
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.48px;
+    text-transform: lowercase;
+    text-underline-offset: 5px;
+}
+
+/* ОБ АУКЦИОНЕ */
+
+.about {
+    max-height: 595px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1.5fr;
+    gap: 0 16px;
+    padding: 2px 16px
+} 
+
+.about__logo {
+    background-color: black;
+    max-width: 240px;
+    width: 100%;
+    max-height: 240px;
+    height: 100%;
+    border-radius: 100%;
+    padding: 64px 46px;
+    place-self: center;
+}
+
+.about__title {
+    font-family: Ralewey, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    place-self: center start;
+    padding-top: 15px;
+    line-height: 47px;
+    /* Для Pixel Perfecr)) */
+    word-spacing: -7px;
+    letter-spacing: 0.7px;
+}
+
+.about_paragraph {
+    grid-column: 2/3;
+    padding-top: 8px;
+    padding-right: 10px;
+}
+
+.about__text {
+    padding-bottom: 23px;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    
+}
+.letter-spasing_-1 {
+    letter-spacing: -0.01em;   
+}
+
+.letter-spasing_1 {
+    letter-spacing: 0.01em;   
+}
+
+.letter-spasing_2 {
+    letter-spacing: 0.02em;   
+}
+
+.letter-spasing_3 {
+    letter-spacing: 0.03em;   
+}
+
+.letter-spasing_4 {
+    letter-spacing: 0.04em;   
+}
+
+/* ФУТЕР */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 148px 50px 85px;
+}
+
+.footer__menu-list {
+    list-style-type: none;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.footer__social-list {
+    list-style-type: none;
+    display: flex;
+    max-height: 48px;
+    height: 100%;
+    justify-content: flex-end;
+    gap: 48px;
+}
+
+.footer__social-icon {
+    height: 100%;
+}
